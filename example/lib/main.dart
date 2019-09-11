@@ -296,6 +296,18 @@ class HomeScreen extends StatelessWidget {
                       colors: [Color(0x22ff3a5a), Color(0x22fe494d)])),
             ),
           ),
+          ClipPath(
+            clipper: ShapeBorderClipper(
+                shape: StadiumBorder(
+                    side: BorderSide(
+                        width: 1,
+                        style: BorderStyle.solid,
+                        color: Colors.red))),
+            child: Container(
+              height: 20,
+              color: Colors.red.shade200,
+            ),
+          ),
         ],
       ),
     );
