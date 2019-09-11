@@ -11,6 +11,7 @@ class MultipleRoundedCurveClipper extends CustomClipper<Path> {
     var increment = size.width / 20;
     while (curXPos < size.width) {
       curXPos += increment;
+      ///曲线
       path.arcToPoint(Offset(curXPos, curYPos), radius: Radius.circular(5));
     }
     path.lineTo(size.width, 0);

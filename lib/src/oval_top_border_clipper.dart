@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+///类型是Rect
 class OvalTopBorderClipper extends CustomClipper<Rect> {
   @override
   Rect getClip(Size size) {

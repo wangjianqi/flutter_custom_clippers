@@ -16,6 +16,7 @@ class PointsClipper extends CustomClipper<Path> {
       x += increment;
       //Si es igual a la altura le digo que suba, si no baja
       y = (y == size.height) ? size.height * .88 : size.height;
+      ///直线
       path.lineTo(x, y);
     }
     path.lineTo(size.width, 0.0);

@@ -6,6 +6,7 @@ enum Edge { TOP, RIGHT, BOTTOM, LEFT }
 class ArrowClipper extends CustomClipper<Path> {
   ArrowClipper(this.triangleHeight, this.rectangleClipHeight, this.edge);
 
+  ///控制箭头的大小
   ///The height of the triangle part of arrow in the [edge] direction
   final double triangleHeight;
 
@@ -70,6 +71,7 @@ class ArrowClipper extends CustomClipper<Path> {
     return path;
   }
 
+  ///箭头
   Path _getLeftPath(Size size) {
     var path = Path();
     path.moveTo(0.0, size.height / 2);

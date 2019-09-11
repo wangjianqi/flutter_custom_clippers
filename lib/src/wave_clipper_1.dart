@@ -10,8 +10,10 @@ class WaveClipperOne extends CustomClipper<Path> {
 
       if(!reverse) {
         Offset firstEndPoint = Offset(size.width * .5,size.height-20);
+        ///第一个拐点
         Offset firstControlPoint = Offset(size.width * .25,size.height-30);
         Offset secondEndPoint = Offset(size.width,size.height - 50);
+        ///第二个拐点
         Offset secondControlPoint = Offset(size.width * .75,size.height-10);
 
         final path = Path()

@@ -13,11 +13,13 @@ class MovieTicketClipper extends CustomClipper<Path> {
     //Altura de control point. Por aca se va a hacer la curva
     double yControlPoint = size.height * .88;  
     //El width que se va a ir corriendo por cada linea
+    ///总共15个
     double increment = size.width / 15;
 
     while (x < size.width) {
       // La curva va a iniciar en x y terminar en x+increment.
       // Y le digo que el punto de la curva tiene que ser en x + la mitad de increment (punto de control x)
+      ///贝塞尔曲线
       path.quadraticBezierTo(x+increment/2, yControlPoint, x+increment, y);
       x += increment;
     }
